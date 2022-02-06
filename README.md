@@ -2,16 +2,14 @@
 a compiler written in python for an imaginary language named TSLang
 this is the bnf of TSLang :
 
-prog ::= func |
-func prog
+prog ::= func |func prog
 func ::= function iden ( flist ) returns type : body end |
-body ::= stmt |
-stmt body
+body ::= stmt | stmt body
 stmt ::= expr ; |
-defvar ; |
-if ( expr ) stmt |
-if ( expr ) stmt else stmt |
-while ( expr ) do stmt |
+         defvar ; |
+         if ( expr ) stmt |
+         if ( expr ) stmt else stmt |
+         while ( expr ) do stmt |
 foreach ( iden of expr ) stmt |
 return expr ; |
 : body end
