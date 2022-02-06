@@ -1,5 +1,5 @@
 # TSLang-Compiler
-a compiler written in python for an imaginary language named TSLang
+a compiler written in python for an imaginary language named TSLang \n
 this is the bnf of TSLang :
 
 prog ::= func |func prog
