@@ -1,0 +1,30 @@
+ function find(Array A, Int x) returns Int:
+ val Int i;
+ val Int n;
+ i = 0;
+ foreach (n of A) :
+ if (n == x):
+    return i;
+else:
+    x=5;
+end
+val Int a ;
+a = 0;
+end
+
+ i = i + 1;
+ end
+ return 1;
+ end
+
+ function main() returns Int :
+ val Array A;
+ val Int a;
+ A = createArray(3);
+ a = 5;
+ A[2] = a+2;
+ A[1] = 6;
+ a = find(A, 5);
+ printInt(find(A, 5));
+ return 0;
+ end
