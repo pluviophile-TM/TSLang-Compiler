@@ -1,0 +1,32 @@
+function sum (Array a, Int b, Int c) returns Int:
+	val Int s;
+	s = b + c;
+    val Int i;
+	if (s >= 2):
+		foreach (i of a):
+			s = s*i;
+		end
+	else :
+		s = 0;
+	end
+	return s;
+end
+
+function main() returns Int:
+	val Int a;
+	val Int b;
+	a = getInt();
+	b = getInt();
+	printInt(b);
+	val Array array;
+	array = createArray(3);
+	--printInt(arrayLength(array));
+	array[0] = getInt();
+	array[1] = getInt();
+	array[2] = getInt();
+	array[3] = getInt();
+	val Int Sum;
+	Sum = sum (array, a, b);
+	printInt(Sum);
+	return 0;
+end
